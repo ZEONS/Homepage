@@ -1,0 +1,570 @@
+@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+
+body
+{
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	font-family: 'Nanum Gothic';
+	overflow-y: scroll;
+}
+
+input,
+textarea,
+select
+{
+	font-family: 'Nanum Gothic';
+}
+
+#ui-datepicker-div
+{
+	z-index: 999 !important;
+}
+
+.newLogin
+{
+	overflow: hidden;
+	margin-top: -25px;
+}
+
+.newLogin > .bg
+{
+	margin: 0 auto;
+	padding: 30px;
+	height: 350px;
+	background-image: url('/resource/image/main.gif');
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-align: center;
+}
+
+.newLogin > .bg > .btnLogin
+{
+	position: fixed;
+	top: 22px;
+	right: 20px;
+	z-index: 1000;
+}
+
+.newLogin > .bg > .btnLoginBox
+{
+	overflow: hidden;
+	display: none;
+	margin: -10px;
+	margin-top: -20px;
+}
+
+.newLogin > .bg > .btnLoginBox > ul
+{
+	position: relative;
+	float: right;
+	padding: 20px;
+	width: 174px;
+	border: 3px solid #007BE2;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	text-align: left;
+	list-style: none;
+}
+
+.newLogin > .bg > .btnLoginBox > ul > li
+{
+	margin: 0;
+	padding: 0;
+}
+
+.newLogin > .bg > .btnLoginBox > ul > li > input
+{
+	margin: 0;
+	padding: 3px;
+	width: 166px;
+	font-size: 12px;
+	border: 1px solid #E8D7A5;
+	outline: none;
+}
+
+.newLogin > .bg > .btnLoginBox > ul > li > input[type="image"]
+{
+	margin: 0;
+	padding: 0;
+	width: 174px;
+	border: 0;
+}
+
+.newLogin > .bg > .btnLoginBox > ul > li > select
+{
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	border: 1px solid #E8D7A5;
+	outline: none;
+}
+
+.newLogin > .bg > .btnLoginBox > ul > li > .saveId
+{
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.newLogin > .bg > .btnLoginBox > ul > li > .saveId > input
+{
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+.newLogin > .bg > .btnLoginBox > ul > li > label > .checkbox
+{
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+.newLogin > .bg > .btnLoginBox > ul > .margin
+{
+	margin-bottom: 10px;
+}
+
+.newLogin > .copy
+{
+	margin-top: 30px;
+	text-align: center;
+}
+
+.login
+{
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 20px;
+	width: 777px;
+	border: 1px solid #E4E4E4;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+}
+
+.login > .wrap
+{
+	overflow: hidden;
+}
+
+.login > .wrap > .left
+{
+	float: left;
+	width: 603px;
+}
+
+.login > .wrap > .left > img
+{
+	border: 3px solid #C0C0C0;
+}
+
+.login > .wrap > .right
+{
+	float: right;
+	width: 174px;
+}
+
+.login > .wrap > .right > .logo
+{
+	float: right;
+}
+
+.loginFooter
+{
+	margin-top: 5px;
+}
+
+.loginFooter > img
+{
+	margin-left: -24px;
+	margin-bottom: -12px;
+}
+
+.menu
+{
+	overflow: hidden;
+	margin-bottom: 25px;
+	width: 100%;
+	border-top: 4px solid #333333;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.menu > .logo
+{
+	float: left;
+	margin: 20px;
+	padding: 0;
+	width: 102px;
+	height: 34px;
+	background: url('http://cyan.ktestate.com/images/cyan_sub_title01.png');
+	cursor: pointer;
+}
+
+.menu > .info
+{
+	float: right;
+	margin-top: 30px;
+	margin-right: 20px;
+}
+
+.menu > .info > img
+{
+	cursor: pointer;
+}
+
+.menu > .info > span
+{
+	color: #FF6600;
+}
+
+.menu > .info > .change
+{
+	display: none;
+	position: absolute;
+	right: 40px;
+	float: right;
+	margin: 0;
+	margin-top: 10px;
+	padding: 10px;
+	border: 1px solid #EEEEEE;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+}
+
+.menu > .info > .change > select
+{
+	margin: 0;
+	padding: 0;
+	font-size: 11px;
+	outline: none;
+}
+
+.menu > .info > .change > img
+{
+	cursor: pointer; 
+}
+
+.menu > ul
+{
+	float: left;
+	margin: 10px;
+	margin-top: 30px;
+	padding: 0;
+	list-style: none;
+}
+
+.menu > ul > li
+{
+	float: left;
+	margin: 0;
+	margin-left: 20px;
+	padding: 0;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.menu > ul > li > div
+{
+	position: absolute;
+	display: none;
+	float: left;
+	margin: 0;
+	margin-top: 10px;
+	padding: 10px;
+	font-size: 11px;
+	color: #666666;
+	border: 1px solid #EEEEEE;
+	background-color: #FAFAFA;
+	border-radius: 5px;
+	z-index: 999;
+}
+
+.menu > ul > li > div > p
+{
+	margin: 0;
+	margin-top: 8px;
+	padding: 0;
+	padding-top: 8px;
+	border-top: 1px dotted #EEEEEE;
+}
+
+.menu > ul > li > div > p:hover
+{
+	font-weight: bold;
+}
+
+.menu > ul > li > div > p:first-child
+{
+	margin-top: 0;
+	padding-top: 0;
+	border-top: 0;
+}
+
+.orangeBg
+{
+	background-color: #FFF8F2;
+}
+
+.box
+{
+	overflow: hidden;
+	margin: 25px;
+	padding: 15px;
+	border: 1px solid #EEEEEE;
+	border-radius: 5px;
+}
+
+.box:fisrt-child
+{
+	margin-top: 0;
+}
+
+.box > p
+{
+	margin: 0;
+	margin-bottom: 15px;
+	padding: 0;
+	padding-bottom: 15px;
+	font-size: 16px;
+	font-weight: bold;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.box > .addSearch
+{
+	margin-bottom: 15px;
+}
+
+.box > .search
+{
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	border: 0;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.box > .addSearch > select,
+.box > .search > select
+{
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	outline: none;
+}
+
+.box > .addSearch > input
+{
+	margin: 0;
+	padding: 0;
+	width: 378px;
+	font-size: 12px;
+	outline: none;
+}
+
+.box > .search > input
+{
+	margin: 0;
+	padding: 0;
+	width: 80px;
+	font-size: 12px;
+	text-align: center;
+	outline: none;
+}
+
+.box > .addSearch > span,
+.box > .search > span
+{
+	padding: 0 10px;
+	color: #EEEEEE;
+}
+
+.box > .search > p
+{
+	float: right;
+	margin: 0;
+	margin-top: 4px;
+	padding: 0;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.box > .search > p > img
+{
+	opacity: 0.8;
+}
+
+.box > .target
+{
+	float: right;
+	margin: 0;
+	margin-top: -46px;
+	padding: 0;
+	border: 0;
+	font-size: 12px;
+	font-weight: normal;
+	color: #FF6600;
+}
+
+.box > .unit
+{
+	float: right;
+	margin: 0;
+	margin-top: 10px;
+	padding: 0;
+	font-size: 11px;
+	font-weight: normal;
+	border: 0;
+}
+
+.box > .graph
+{
+	margin-bottom: -30px;
+	text-align: center;
+}
+
+.box > .graph > .accessibility
+{
+	display: none;
+}
+
+.box > table
+{
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid #EEEEEE;
+}
+
+.box > table > thead > tr > th,
+.box > table > tbody > tr > th
+{
+	padding: 5px;
+	background-color: #FAFAFA;
+}
+
+.box > table > tbody > tr > td
+{
+	padding: 5px;
+}
+
+.box > table > tbody > tr > td > .area
+{
+	overflow: hidden;
+	width: 100%;
+}
+
+.box > table > tbody > tr > td > .area
+{
+	width: 100%;
+	border: 0;
+	text-align: center;
+}
+
+.box > table > tbody > tr > td .Y
+{
+	background-color: #FCFFC7;
+}
+
+.box > table > tbody > tr > td .G
+{
+	background-color: #D0FFC7;
+}
+
+.box > table > tbody > tr > td .B
+{
+	background-color: #D1D4FF;
+}
+
+.box > table > tfoot > tr > td
+{
+	padding: 5px;
+	background-color: #FAFAFA;
+	font-weight: bold;
+}
+
+.box > table > tbody > tr > .center,
+.box > table > tfoot > tr > .center
+{
+	text-align: center;
+}
+
+.box > table > tbody > tr > .right,
+.box > table > tfoot > tr > .right
+{
+	text-align: right;
+}
+
+.box > table > tbody > tr > td:first-child,
+.box > table > tfoot > tr > td:first-child
+{
+	text-align: center;
+}
+
+.buildingImage
+{
+	width: 1px;
+	height: 1px;
+}
+
+#ui-datepicker-div
+{
+	margin-top: 10px !important;
+}
+
+#grid
+{
+	margin: 25px;
+	z-index: 1;
+}
+
+.copyright
+{
+	margin-bottom: 10px;
+}
+
+
+.zcopyright
+{
+	margin-bottom: 10px;
+}
+
+
+/************Footer***********/
+
+footer {
+	display: block;
+}
+
+footer {
+}
+
+footer a:hover {
+	color: #f17c72;
+}
+
+
+
+
+/**to top**/
+#toTop {
+	display:none;
+	text-decoration:none;
+	position:fixed;
+	bottom:40px;
+	margin-right: -620px !important;
+	overflow:hidden;
+	width:45px;
+	height:45px;
+	border:none;
+	text-indent:-999px;
+	z-index:999;
+	background:url(../images/totop.png) no-repeat left top;
+	transition: 0s ease;
+	-webkit-transition: 0s ease;
+	-o-transition: 0s ease;	
+}
+#toTop:hover {
+	background-position: right 0;
+}
